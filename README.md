@@ -1,4 +1,4 @@
-# OctoPrintStudio
+# OctoPrintStudio - Work in progress
 
 Simple Toolkit to control the video streams of several OctoPrint instances and output them via OBS-Studio. This tool uses the OctoPrint Rest API to access
 information about the current print and adds them as overlay to the video stream. It is also capable of handling multiple instances at once and switch between their respective
