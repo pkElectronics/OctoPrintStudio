@@ -87,6 +87,8 @@ Of course you can add other video sources like ip cameras or whatever you like, 
 ### Running
 
 That´s simple, start OBS, fire up a terminal and head to your project directory.
-Execute >python3 main.py
-Enjoy
 
+Execute 
+>python3 main.py
+
+Enjoy
