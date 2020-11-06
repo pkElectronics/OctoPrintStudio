@@ -5,6 +5,8 @@ information about the current print and adds them as overlay to the video stream
 streams based on printing progress and activity.
 It also checks weather the OBS-Studio instance is still alive and restarts OBS if necessary and reconnects the stream (linux only)
 
+If you need support on a commercial scale to monitor larger printfarms, feel free to contact me.
+
 ## Dependencies
 
 ### Python 3
