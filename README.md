@@ -10,14 +10,20 @@ It also checks weather the OBS-Studio instance is still alive and restarts OBS i
 ### Python 3
 
 - PyYAML
-- simpleobsws
-- octorest
+- simpleobsws <https://github.com/IRLToolkit/simpleobsws>
+- octorest <https://github.com/dougbrion/OctoRest>
 
 ### OBS-Studio
-- OBS-Studio (link)
-- OBS-Websocket (link)
+- OBS-Studio <https://obsproject.com/de/download>
+- OBS-Websocket <https://github.com/Palakis/obs-websocket>
 
+### Installation
 
+Simply download the main.py and pStream.yaml from Github.
+
+Install OBS and OBS-Websocket with their respective installers
+
+Use pip and/or venv to setup your python3 environment.
 
 ### Setup & Configuration
 
@@ -39,6 +45,8 @@ manuals on their websites. After that perform following steps for each OctoPrint
 - disable_after_finish_time -> time in seconds after which a finished print is not displayed anymore
 
 #### Add a new entry to the pStream.yaml in the "instances" section
+
+Use the pStream.yaml.example as a starting point.
 
 Each instance has four parameters
 - name -> name of the instance, used for displaying in the overlay and identification of the scene
@@ -73,4 +81,12 @@ I won´t go into detail here on how to properly setup OBS, just a few things.
 Should look something like this when you´re done.
 
 Make sure to configure the Output parameters in OBS, like streamprovider, encoding settings etc.
+
+Of course you can add other video sources like ip cameras or whatever you like, you just have to add the source to a corresponding scene and configure an OctoPrint instance. You could also have multiple cameras per printer (e.g. one OctoPrint stream and one ip camera) you just have to add them as different scenes and configure two OctoPrint instances with the same url in the pStream.yaml.
+
+### Running
+
+That´s simple, start OBS, fire up a terminal and head to your project directory.
+Execute >python3 main.py
+Enjoy
 
