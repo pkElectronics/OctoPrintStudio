@@ -49,22 +49,28 @@ Each instance has four parameters
 Example:
 
 >name: "Prusa i3"
+
 >url: "http://prusa.local"
+
 >apikey: "F95E1544CF248AAAEFC49460CFB9E43"
+
 >forceactive: True
 
 #### Configure OBS-Studio
 I won´t go into detail here on how to properly setup OBS, just a few things.
 
 - Add a new scene to OBS, make sure its name matches the "name" entered in the pStream.yaml
-- to this scene, add a media source with according to the example in the picture, make sure to use the right url e.g. {octoprint-url}:8080/?action=stream
+- to this scene, add a media source with according to the example in the picture, make sure to use the right url e.g. {octoprint-url}:8080/?action=stream it doesn´t matter how it´s named just select something descriptive
 
 ![Source Setup](https://github.com/pkElectronics/OctoPrintStudio/blob/master/doc/source.PNG "Source Setup")
 
 - add two text Freetype2 text sources named {name}.text1 and {name}.text2 and position them in the scene. (those a deprecated as of v26, but well, I don´t care)
 - repeat the steps for every OctoPrint Instance you´d like to control
 - add a scene named "IDLE" and configure it as you wish
+
 ![OBS Overview](https://github.com/pkElectronics/OctoPrintStudio/blob/master/doc/overview.PNG "OBS Overview")
 
 Should look something like this when you´re done.
+
+Make sure to configure the Output parameters in OBS, like streamprovider, encoding settings etc.
 
