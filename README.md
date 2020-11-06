@@ -1,4 +1,8 @@
 # OctoPrintStudio
+## Abstract
+Handling livestreams across multiple OctoPrint instances can be exhausting. This toolikt uses OBS, Python and OctoPrint to easily switch between several videostreams and output the to your favourite streaming service. It also adds overlay texts to display print information like filename, temperatures and progress. 
+
+## Introduction
 
 Simple Toolkit to control the video streams of several OctoPrint instances and output them via OBS-Studio. This tool uses the OctoPrint Rest API to access
 information about the current print and adds them as overlay to the video stream. It is also capable of handling multiple instances at once and switch between their respective
@@ -19,7 +23,7 @@ If you need support on a commercial scale to monitor larger printfarms, feel fre
 - OBS-Studio <https://obsproject.com/de/download>
 - OBS-Websocket <https://github.com/Palakis/obs-websocket>
 
-### Installation
+## Installation
 
 Simply download the main.py and pStream.yaml from Github.
 
