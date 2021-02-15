@@ -7,7 +7,7 @@ Handling livestreams across multiple OctoPrint instances can be exhausting. This
 Simple Toolkit to control the video streams of several OctoPrint instances and output them via OBS-Studio. This tool uses the OctoPrint Rest API to access
 information about the current print and adds them as overlay to the video stream. It is also capable of handling multiple instances at once and switch between their respective
 streams based on printing progress and activity.
-It also checks weather the OBS-Studio instance is still alive and restarts OBS if necessary and reconnects the stream (linux only)
+It also checks whether the OBS-Studio instance is still alive and restarts OBS if necessary and reconnects the stream (linux only)
 
 If you need support on a commercial scale to monitor larger printfarms, feel free to contact me.
 
